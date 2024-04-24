@@ -1,6 +1,15 @@
-import getBirthYear from "./src/index.js";
+const factorial = (n) => {
+  if (n === 1) {
+    return 1;
+  }
 
-console.log("Сколько вам лет?");
-const age = 18; // Каким-то способом получаем возраст пользователя, через терминал. Сейчас не важно как
-const birthYear = getBirthYear(age);
-console.log(`Ваш год рождения: ${birthYear}`);
+  const iter = (i, n) => {
+    if (n % i === 0) {
+      return i;
+    }
+    return iter(i + 1, n);
+  };
+  return iter(2, n);
+};
+
+console.log(factorial(17));
