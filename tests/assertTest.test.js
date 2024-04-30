@@ -13,4 +13,4 @@ assert.equal(capitalize("hello"), "Hello");
 
 assert.deepEqual({}, {}); // всё ок
 assert.deepEqual({ key: "value" }, { key: "value" }); // всё ок
-assert.deepEqual({ key: "value" }, { key: "value" }); // Бум!
+assert.deepEqual({ key: "value" }, { key: "another value" }); // Бум!
