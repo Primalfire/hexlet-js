@@ -1,6 +1,1 @@
-// file: src/index.js
-export default (age) => {
-  const birthYear = 2005; // Подсчитываем результат
-
-  return birthYear;
-};
+export default (str) => str.split("").reverse().join("");
